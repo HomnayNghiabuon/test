@@ -24,7 +24,7 @@ namespace test
 
         private void btCong_Click(object sender, EventArgs e)
         {
-            "hello"
+            //"day la su thay doi"
             double a = double.Parse(textBox1.Text);
             double b = double.Parse(textBox2.Text);
             double c = a + b;
