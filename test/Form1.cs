@@ -24,7 +24,12 @@ namespace test
 
         private void btCong_Click(object sender, EventArgs e)
         {
-            textBox3.Text = (int.Parse(textBox1.Text) + int.Parse(textBox2.Text)).ToString();
+            "hello"
+            double a = double.Parse(textBox1.Text);
+            double b = double.Parse(textBox2.Text);
+            double c = a + b;
+            textBox3.Text = c.ToString();
+
         }
     }
 }
