@@ -29,55 +29,106 @@ namespace test
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.btCong = new System.Windows.Forms.Button();
+            this.lbSoA = new System.Windows.Forms.Label();
+            this.lbSoB = new System.Windows.Forms.Label();
+            this.lbKQ = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // checkBox1
+            // textBox1
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(334, 92);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(82, 19);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "checkBox1";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.textBox1.Location = new System.Drawing.Point(258, 110);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 23);
+            this.textBox1.TabIndex = 0;
             // 
-            // errorProvider1
+            // textBox2
             // 
-            this.errorProvider1.ContainerControl = this;
+            this.textBox2.Location = new System.Drawing.Point(258, 179);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 23);
+            this.textBox2.TabIndex = 1;
             // 
-            // comboBox1
+            // textBox3
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(294, 206);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 23);
-            this.comboBox1.TabIndex = 1;
+            this.textBox3.Location = new System.Drawing.Point(258, 289);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 23);
+            this.textBox3.TabIndex = 2;
+            // 
+            // btCong
+            // 
+            this.btCong.AutoSize = true;
+            this.btCong.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btCong.Location = new System.Drawing.Point(427, 282);
+            this.btCong.Name = "btCong";
+            this.btCong.Size = new System.Drawing.Size(96, 40);
+            this.btCong.TabIndex = 3;
+            this.btCong.Text = "Cộng";
+            this.btCong.UseVisualStyleBackColor = true;
+            this.btCong.Click += new System.EventHandler(this.btCong_Click);
+            // 
+            // lbSoA
+            // 
+            this.lbSoA.AutoSize = true;
+            this.lbSoA.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbSoA.Location = new System.Drawing.Point(101, 110);
+            this.lbSoA.Name = "lbSoA";
+            this.lbSoA.Size = new System.Drawing.Size(53, 30);
+            this.lbSoA.TabIndex = 4;
+            this.lbSoA.Text = "Số a";
+            this.lbSoA.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // lbSoB
+            // 
+            this.lbSoB.AutoSize = true;
+            this.lbSoB.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbSoB.Location = new System.Drawing.Point(101, 179);
+            this.lbSoB.Name = "lbSoB";
+            this.lbSoB.Size = new System.Drawing.Size(54, 30);
+            this.lbSoB.TabIndex = 5;
+            this.lbSoB.Text = "Số b";
+            // 
+            // lbKQ
+            // 
+            this.lbKQ.AutoSize = true;
+            this.lbKQ.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbKQ.Location = new System.Drawing.Point(101, 282);
+            this.lbKQ.Name = "lbKQ";
+            this.lbKQ.Size = new System.Drawing.Size(84, 30);
+            this.lbKQ.TabIndex = 6;
+            this.lbKQ.Text = "Kết quả";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.lbKQ);
+            this.Controls.Add(this.lbSoB);
+            this.Controls.Add(this.lbSoA);
+            this.Controls.Add(this.btCong);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBox1);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.ErrorProvider errorProvider1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label lbKQ;
+        private System.Windows.Forms.Label lbSoB;
+        private System.Windows.Forms.Label lbSoA;
+        private System.Windows.Forms.Button btCong;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 
